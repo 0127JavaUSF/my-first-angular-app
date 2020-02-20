@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { ClickerComponent } from 'src/app/components/clicker-component/clicker.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickerComponent,
-    UserListComponent
+    UserListComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<p>{{inputData}}</p>
+<app-child 
+    (myEvent)="receiveData($event)" 
+    [childData]="data"></app-child>
