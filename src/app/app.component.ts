@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular-app';
+
+  something = false;
+
+  constructor() {
+    // setInterval(() => {
+    //   this.something = !this.something;
+    // }, 1000);
+  }
+
+  invert() {
+    this.something = !this.something;
+  }
 }
