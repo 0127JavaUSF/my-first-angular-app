@@ -1,0 +1,32 @@
+<ol>
+    <!-- Structural Directive: *ngFor -->
+    <li *ngFor="let user of users">
+        {{ user }}
+    </li>
+</ol>
+
+<form>
+
+    <!-- ngModel is used for 2 way data binding.  This is extremely
+    useful for input and other input-oriented tags. 
+    Because it is two way, both changes from the user in the template
+    and programmatic changes can be used to update the state of the
+    component.  -->
+    <input name="user-input" [(ngModel)]="userInput" type="text">
+    <p>{{ userInput }}</p>
+    <button (click)="addPerson()">Add User</button>
+</form>
+
+<!-- Four kinds of binding in Angular
+    1. Property Binding - [property]="expression"
+    2. Event Binding - (event)="expression"
+    3. One way data binding (Interpolation) - {{ property }}
+    4. Two way data binding (ngModel) - [(ngModel)]="property"
+        (ngModel requires FormsModule registered)
+-->
+
+<!-- Structural directives 
+    1. *ngIf="expression"
+    2. *ngFor="let val of iterable"
+    3. *ngSwitch="switch"
+-->

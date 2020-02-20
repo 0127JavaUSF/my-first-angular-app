@@ -6,4 +6,11 @@ will be rendered in the p tag at the position
 of the {{}} -->
 <p>Clicks: {{ clicks }}</p>
 
-<button (click)="processClicks()">Click Me</button>
+<button (click)="processClicks(1)">Click Me</button>
+<!-- Structural Directives -->
+<!-- Structural directives give us controls for dynamically
+    removing and adding content to the DOM. -->
+<!-- *ngIf - Structural directive that conditionally
+    renders an element given a predicate -->
+<button *ngIf="clicks > 50" (click)="processClicks(5)">Big Click</button>
+<button *ngIf="clicks > 200" (click)="processClicks(15)">Huge Click</button>

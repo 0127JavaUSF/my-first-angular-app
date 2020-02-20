@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 
 /*
  *  @Component is a decorator which is used to declare metadata
- associated with Angular components. By default it should declare
- a selector, and a template file, and will generally also include
- a stylesheet.  
+ * associated with Angular components. By default it should declare
+ * a selector, and a template file, and will generally also include
+ * a stylesheet.
  */
 @Component({
     selector: 'app-clicker',
